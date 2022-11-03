@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74BBDC"
+    tools:context=".ledinhkhang_activityUpdate">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="CHI TIẾT SÁCH"
+        android:textColor="#FB0000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="112dp"
+        android:enabled="false"
+        android:text="Mã sách"
+        android:textColor="#0E0D0D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="204dp"
+        android:enabled="false"
+        android:text="Tên sách"
+        android:textColor="#0E0D0D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="292dp"
+        android:enabled="false"
+        android:text="Loại sách"
+        android:textColor="#0E0D0D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="384dp"
+        android:enabled="false"
+        android:text="Tác giả"
+        android:textColor="#0E0D0D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="476dp"
+        android:enabled="false"
+        android:text="Số lượng"
+        android:textColor="#0E0D0D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="86dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="568dp"
+        android:enabled="false"
+        android:text="Giá"
+        android:textColor="#0E0D0D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etmaSU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="@color/purple_700"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etTenSU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Nhập tên sách"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etmaSU"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etmaSU"
+        app:layout_constraintTop_toBottomOf="@+id/etmaSU" />
+
+    <EditText
+        android:id="@+id/etLoaiU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Nhập loại sách"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etTenSU"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etTenSU"
+        app:layout_constraintTop_toBottomOf="@+id/etTenSU" />
+
+    <EditText
+        android:id="@+id/etTacU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Nhập tác giả"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etLoaiU"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etLoaiU"
+        app:layout_constraintTop_toBottomOf="@+id/etLoaiU" />
+
+    <EditText
+        android:id="@+id/etSoU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Số lượng"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etTacU"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etTacU"
+        app:layout_constraintTop_toBottomOf="@+id/etTacU" />
+
+    <EditText
+        android:id="@+id/etGiaU"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/customer_edit_app"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Nhập giá tiền"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etSoU"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etSoU"
+        app:layout_constraintTop_toBottomOf="@+id/etSoU" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="CẬP NHẬT"
+        android:textSize="20dp"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etGiaU"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/etGiaU" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
